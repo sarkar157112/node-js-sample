@@ -2,9 +2,9 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/extranceuat/extrance-backend-api-pipeline
+    destination: /home/ubuntu/
 hooks:
   ApplicationStart:
-    - location: uat-api_setup.sh
+    - location: setup.sh
       timeout: 300
-      runas: extranceuat
+      runas: ubuntu
