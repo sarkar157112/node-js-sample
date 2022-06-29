@@ -9,6 +9,6 @@ phases:
 artifacts:
   files: 
     - deploy.tar.gz
-    - uat-api_setup.sh
+    - setup.sh
     - appspec.yml 
   discard-paths: yes
