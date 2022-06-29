@@ -1,0 +1,14 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - echo Entered the build phase...
+      - npm install
+      - tar -czf deploy.tar.gz *
+artifacts:
+  files: 
+    - deploy.tar.gz
+    - uat-api_setup.sh
+    - appspec.yml 
+  discard-paths: yes
